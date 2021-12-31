@@ -32,7 +32,7 @@ def getplacename():
         clock.config(text=current_time)
         name.config(text='Current Time: ')
 
-        api_key = "https://api.openweathermap.org/data/2.5/weather?q="+ placename + "&appid=3534c512263d2b83b12d639c93d88192"
+        api_key = "https://api.openweathermap.org/data/2.5/weather?q="+ placename + "your api key id"
 
         json_data = requests.get(api_key).json()
         condition = json_data['weather'][0]['main']
